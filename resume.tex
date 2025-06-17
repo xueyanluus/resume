@@ -1,0 +1,265 @@
+%------------------------- Resume in Latex
+% Author : Xueyan Lu
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingMultiRole}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+}
+\newcommand{\resumeRoleEntry}[2]{
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textit{\small #1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-4pt}
+}
+% \resumeSubheadingMultiRole
+% {AdventHealth} {Daytona Beach, FL}
+% \resumeRoleEntry
+% {Medical Dosimetrist PRN}{Feb. 2023 -- Oct. 2024}
+% \resumeRoleEntry
+% {Medical Dosimetrist Intern}{Sep. 2022 -- Jan. 2023}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% https://www.overleaf.com/
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+\textbf{\Huge \scshape Xueyan Lu} \\ \vspace{1pt}
+\small Tampa, FL $|$ \small 239-270-9828 $|$ \href{mailto:xueyanlu.us@gmail.com}{\underline{xueyanlu.us@gmail.com}} $|$
+\href{https://www.linkedin.com/in/xelu}{\underline{linkedin.com/in/xelu}}  $|$
+\href{https://github.com/xueyanluus}{\underline{github.com/xueyanluus}}
+\end{center}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Miami - Sylvester Comprehensive Cancer Center} {Miami, FL}
+{Medical Dosimetrist}  {Oct. 2024 - Present}
+\resumeItemListStart
+\resumeItem{Planned with IMRT, VMAT, SBRT, adaptive, 3D, HyperArc SRS, Hypersight and CSI}
+\resumeItem{Served as a lead dosimetrist and trainer in Ethos adaptive planning}
+\resumeItem{Planned across multiple machine platforms, including Truebeam, Ethos, and Edge}
+\resumeItem{Performed advanced image registration for PET/CT, 4D CT, and MRI using MIM and Aria}
+\resumeItem{Instructed physicist and dosimetry students in treatment planning, providing hands-on training}
+\resumeItemListEnd
+
+\resumeSubheadingMultiRole
+{AdventHealth} {Daytona Beach, FL}
+\resumeRoleEntry
+{Medical Dosimetrist PRN}{Feb. 2023 -- Oct. 2024}
+\resumeRoleEntry
+{Medical Dosimetrist Intern}{Sep. 2022 -- Jan. 2023}
+\resumeItemListStart
+\resumeItem{Planned static IMRT, VMAT, 3D, FiF, SBRT, SRS, electron, and RPM}
+\resumeItem{Planned across multiple machine platforms, including TrueBeam, Trilogy, and Novalis}
+\resumeItem{Performed advanced image registration for PET/CT, 4D CT, and MRI using Velocity and Aria}
+\resumeItemListEnd
+
+\resumeSubheadingMultiRole
+{Nokia}{Hangzhou, China}
+\resumeRoleEntry
+{Senior Software Automation Engineer}{Sep. 2015 - Oct. 2017}
+\resumeRoleEntry
+{Software Automation Engineer}{May. 2011 - Aug. 2015}
+\resumeItemListStart
+\resumeItem{Designed and led the development of an innovative automation system that reduced reliance on costly test equipment, resulting in annual cost savings of €230,000, awarded with the Lean Six Sigma Green Belt Certification}
+\resumeItem{Developed the automation scripts of continuous integration, unit testing, and feature validation}
+\resumeItem{Developed the telecom cloud platform and API based on Openstack/Linux platform}
+\resumeItemListEnd
+
+\resumeSubheading
+{Alibaba} {Hangzhou, China}
+{Software Engineer}  {Jul. 2010 - Apr. 2011}
+\resumeItemListStart
+\resumeItem{Performed unit and functional testing on website components deployed in a Linux environment}
+\resumeItemListEnd
+
+\resumeSubheading
+{Huawei} {Chengdu, China}
+{Software Engineer Intern}  {Jul. 2008 - Jan. 2009}
+\resumeItemListStart
+\resumeItem{Developed L3 RRC protocol for WCDMA BTS and LTE BTS}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{John Patrick University of Health and Applied Sciences}{South Bend, IN}
+{Master of Science in Medical Dosimetry;  GPA: 3.82}{Sep. 2020 -- Dec. 2022}
+\resumeSubheading
+{University of Electronic Science and Technology of China}{Chengdu, China}
+{Master of Engineering in Information and Communication Engineering}{Sep. 2007 -- Jul. 2010}
+\resumeSubheading
+{Heilongjiang University of Science and Technology}{Harbin, China}
+{Bachelor of Engineering in Electrical and Electronics Engineering}{Sep. 2003 -- Jul. 2007}
+% \resumeSubItem
+% {The First Award of Undergraduate Advanced Mathematical Contest. Nov. 2004\\
+% Excellent Undergraduate Student in Heilongjiang Province. Jun. 2007}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD\&filename=2010234506.nh}{\underline{\textbf{CoMP}}} $|$ \emph{UESCT}}{Fall 2009 - Spring 2010}
+\resumeItemListStart
+\resumeItem{Designed a new Multi-User MIMO Scheme in Coordinated Multiple Point (CoMP) with adaptive ICIC strategy}
+\resumeItemListEnd
+\resumeProjectHeading
+{{\textbf{Deep Space}} $|$ \emph{UESTC, National 863 Program}}{Mar. 2008 - Jul. 2008}
+\resumeItemListStart
+\resumeItem{Verified a low complexity code-aided carrier synchronization algorithm for deep space communication}
+\resumeItemListEnd
+% \resumeProjectHeading
+% {\textbf{Project name} $|$ \emph{UESTC}}{Fall 2004}
+% \resumeItemListStart
+% \resumeItem{Created XXXXXX}
+% \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----- HONORS ------
+\section{Honors}
+\resumeSubHeadingListStart
+\item{}
+\resumeItemListStart
+\resumeItem{Excellent Undergraduate Student in Heilongjiang Province}
+\resumeItem{The First Award of Undergraduate Advanced Mathematical Contest - HUST}
+\resumeItem{The First Class Award Scholarship (twice) - HUST}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%
+%-----------Additional Information-----------
+\section{Additional Information}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Certifications}{: Certified Medical Dosimetrist (CMD) in Sep. 2023} \\
+\textbf{Languages}{: Python, C} \\
+}}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
